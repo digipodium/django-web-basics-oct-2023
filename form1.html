@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" name="username" id="username" placeholder="Username" maxlength="20" size="25"
+            pattern="[A-Za-z0-9]+" required>
+        <br>
+        <input type="email" name="email" placeholder="Email" id="email">
+        <br>
+        <input type="tel" name="phone" placeholder="Phone" id="phone">
+        <br>
+        <input type="date" name="dob" id="dob">
+        <br>
+        <input type="datetime-local" name="admissiondate" id="admitdate">
+        <br>
+        <input type="file" name="avatar" id="avatar">
+        <br>
+
+        <input type="checkbox" name="agree" id="agree">
+        Agree to our terms and conditions?
+        <br>
+        <p>You fav fruit</p>
+        <input type="radio" 
+            name="ff" 
+            id="ff1" 
+            value="apple">Apple
+        
+        <input type="radio"
+            name="ff" 
+            id="ff2" 
+            value="mango">Mango
+           
+        <input type="radio" 
+            name="ff" 
+            id="ff3"
+            value="pineapple">Pineapple
+        <br>
+        <p>Kitna padhe ho?</p>
+        <select name="edu" id="edu">
+            <option value="1">Graduate</option>
+            <option value="2">Post-Graduate</option>
+            <option value="3">Doctrate</option>
+            <option value="4">Intermediate</option>
+            <option value="5">Highschool</option>
+            <option value="6">5th fail</option>
+        </select>
+        <br>
+        <p>Rate your skill</p>
+        <input 
+            type="range" 
+            name="rating" 
+            id="rating">
+        <input type="hidden" 
+            name="secret"
+            value="kuch raaz h isme">
+        <br>
+        <input type="submit" value="send">
+    </form>
+</body>
+
+</html>
