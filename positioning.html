@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positions</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .box1{
+            height: 150px;
+            width: 150px;
+            background-color: #00ffff;
+            position:relative;
+            top:1rem;
+            left:1rem;
+        }
+        .box2{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(240, 117, 117);
+            position:absolute;
+            bottom: 5rem;
+            left: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box1">
+            box1:relative
+        </div>
+        <div class="box2">
+            box2:absolute
+        </div>
+    </main>
+</body>
+</html>
