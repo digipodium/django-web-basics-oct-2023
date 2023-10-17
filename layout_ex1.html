@@ -34,25 +34,53 @@
         }
 
         .nav-list a {
-            color: whitesmoke;
+            color: rgb(234, 60, 60);
             text-decoration: none;
             font-size: 1.2rem;
         }
 
         .nav-list a:hover {
-            color: rgb(238, 255, 0);
+            color: rgb(0, 64, 255);
         }
 
         main {
             min-height: 80vh;
             /* background-color: rgb(3, 108, 73); */
+            width: min(70ch, 90%);
+
+            margin-inline: auto;
         }
-        .hero-heading{
+
+        .hero-heading {
             font-size: 6rem;
             line-height: 1.1;
             margin-bottom: 5rem;
-            margin-left:1rem;
             padding-top: 5rem;
+        }
+
+        .text {
+            font-size: 1.25rem;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        .item-list>* {
+            list-style: url('static/images/arrow.png');
+            margin-left: 1.35rem;
+            padding: .25rem 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .item-list{
+            margin-bottom: 1rem;
+        }
+        footer{
+            background-color: rgb(230, 230, 227);
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            color: rgb(255, 0, 30);
+            font-weight: bold;
         }
     </style>
 </head>
@@ -71,17 +99,27 @@
         <section>
             <article>
                 <h2 class="hero-heading">Welcome to Layouts in CSS</h2>
-                <p>
-                    Today we are going to see examples of
-                    layouts in CSS.
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est illum, aliquam hic quibusdam,
+                    molestiae aperiam quae suscipit magnam voluptatem expedita dolores debitis dolorum fugit, sit ab! A
+                    perspiciatis adipisci quam, veniam velit modi mollitia voluptate deserunt fuga asperiores quia
+                    reprehenderit eveniet, commodi ut accusantium beatae maiores dicta deleniti, illum ipsum debitis
+                    blanditiis. Aperiam quibusdam laboriosam dignissimos odit. Illum earum praesentium sequi veniam
+                    soluta tenetur laudantium, ipsam voluptas dolorem fuga enim corrupti aliquam iusto, eum voluptate
+                    doloribus explicabo itaque autem at dolores ab reprehenderit. Doloribus non, illum est quaerat,
+                    voluptates dolor hic mollitia, vel illo ipsum aliquid fugiat ab possimus quia.
                 </p>
-                <ul>
+                <ul class="item-list">
                     <li>Grids</li>
                     <li>Flexbox</li>
                     <li>Mixing both togther</li>
                 </ul>
-                <p>
-                    This is very useful for creating simple layouts
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus consequuntur ipsa veniam animi
+                    quia, perspiciatis atque omnis praesentium reprehenderit explicabo, aperiam quis labore soluta, rem
+                    nihil dolorem minima suscipit corrupti saepe totam mollitia eaque. Dolorum quasi laboriosam
+                    reprehenderit consequuntur excepturi voluptatum, assumenda corporis ipsum nam sapiente quae tenetur
+                    odio.
                 </p>
             </article>
         </section>
