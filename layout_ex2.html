@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout example 2</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(18, 23, 40);
+            color: white;
+        }
+
+        section {
+            min-height: 90vh;
+            /* viewport height */
+            max-width: 90%;
+            margin-inline: auto;
+        }
+
+        header {
+            padding-top: 4.5rem;
+        }
+
+        .logo {
+            width: 3rem;
+            height: 3rem;
+            filter: invert(1);
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 3rem;
+            font-weight: bolder;
+            font-family: sans-serif;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: center;    
+            height: 80vh;   
+        }
+
+        .hero {
+            display: grid;
+            justify-items: center;
+        }
+        .col{
+        
+        }
+        .col h1{
+            font-size: 8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <section>
+            <header>
+                <nav>
+                    <a href="#" class="nav-link">
+                        <img src="static/images/logo.png" alt="logo" class="logo">
+                        Kinnectric
+                    </a>
+                </nav>
+            </header>
+            <div class="content">
+                <div class="col">
+                    <h1>Always Stay Connected</h1>
+                    <button>Learn More</button>
+                </div>
+                <div class="col hero">
+                    <img src="static/images/image1.png" alt="image1">
+                </div>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+</body>
+
+</html>
