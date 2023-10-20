@@ -56,8 +56,8 @@
         }
 
         .hero {
-            display: grid;
-            justify-items: center;
+            flex-wrap: wrap;
+            align-items: center;
         }
         .hero img{
             width: 600px;
@@ -65,11 +65,38 @@
             object-fit: cover;
             border-radius: 5rem;
         }
+        .col{
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            justify-content: center;
+        }
         .col h1{
             font-size: 8rem;
+            font-family: sans-serif;
+            line-height: 1;
+        }
+        .title-wrapper{
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+        .btn-wrapper{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: flex-end;
         }
         .col button{
-
+            font-size: 1.6rem;
+            padding:1.75rem;
+            border-radius: 3rem;
+            width: 250px;
+            border: none;
+            font-weight: bolder;
+            background-color: red;
+            background-image: linear-gradient(90deg,rgb(164, 36, 164), rgb(198, 56, 79));
         }
     </style>
 </head>
@@ -88,8 +115,12 @@
             </header>
             <div class="content">
                 <div class="col">
-                    <h1>Always Stay Connected</h1>
-                    <button>Learn More</button>
+                    <div class="title-wrapper">
+                        <h1>Always Stay Connected</h1>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button>Learn More</button>
+                    </div>
                 </div>
                 <div class="col hero">
                     <img src="static/images/image1.png" alt="image1">
